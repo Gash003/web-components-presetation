@@ -4,11 +4,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Web Components</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/page.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,8 +26,70 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Web Components</h1>
+					<img src="./assets/web-components-logo.png" alt="Web Components Logo">
+				</section>
+				<section>
+					<h2>Idea</h2>
+					<div class="circle-continer">
+						<div class="orange-circle">HTML</div>
+						<div class="orange-circle">CSS</div>
+					</div>
+					<div class="circle-continer">
+						<div class="orange-circle">JavaScript</div>
+					</div>
+				</section>
+				<section>
+						<section>
+								<h2>Before</h2>
+								<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
+			&lt;!DOCTYPE html&gt;
+			&lt;html lang="en"&gt;
+			&lt;head&gt;
+				&lt;script src="jquery.min.js"&gt;&lt;/script&gt;
+				&lt;script src="jquery-plugin.js"&gt;&lt;/script&gt;
+			
+				&lt;link rel="stylesheet" href="jquery-ui.min.css"&gt;
+				&lt;link rel="stylesheet" href="jquery-plugin.css"&gt;
+			
+				&lt;script src="jquery-plugin2.js"&gt;&lt;/script&gt;
+				&lt;link rel="stylesheet" href="jquery-plugin2.css"&gt;
+			
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+
+								</code></pre>
+						</section>
+						<section>
+							<h2>Now</h2>
+							<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
+									&lt;!DOCTYPE html&gt;
+									&lt;html lang="en"&gt;
+									&lt;head&gt;
+										&lt;script src="my-web-component.js"&gt;&lt;/script&gt;
+									&lt;/head&gt;
+									&lt;body&gt;
+									&lt;/body&gt;
+									&lt;/html&gt;
+						
+														</code></pre>
+						</section>
+					</section>
+					<section>
+						<img src="./assets/web-components-specification.jpg" alt="Web Components Specification">
+					</section>
+					<section>
+						<section>
+							<h2>Custom elements</h2>
+							<div class="white-background">
+								<img src="./assets/custom-elements_256x256.png" alt="Custom elements">
+							</div>
+						</section>
+
+					</section>
 			</div>
 		</div>
 
